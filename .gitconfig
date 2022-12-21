@@ -1,0 +1,11 @@
+[user]
+	name = Oleg Kozlov
+	email = oleg.kozloff@gmail.com
+	signingkey = 0x1236511E2D309DF4
+[core]
+	editor = nvim
+	excludesfile = /Users/oleg/.gitignore
+[commit]
+	gpgsign = true
+[gpg]
+  program = /opt/homebrew/bin/gpg
