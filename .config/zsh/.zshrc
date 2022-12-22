@@ -117,10 +117,7 @@ fpath=(${ASDF_DIR}/completions $fpath)
 autoload -Uz compinit && compinit
 
 alias tree="tree -CL 2"
-alias mm="cd /Users/oleg/Work/marko"
-alias pp="cd /Users/oleg/Personal/"
 alias v="nvim"
-alias config-zsh="nvim /Users/oleg/.zshrc"
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 export GPG_TTY=$(tty)
 
