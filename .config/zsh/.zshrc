@@ -75,6 +75,7 @@ plugins=(
   git 
   docker 
   docker-compose 
+  mix
   zsh-autosuggestions 
   zsh-syntax-highlighting
 )
@@ -110,7 +111,7 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-. $HOME/.asdf/asdf.sh
+. $(brew --prefix)/opt/asdf/libexec/asdf.sh
 # append completions to fpath
 fpath=(${ASDF_DIR}/completions $fpath)
 # initialise completions with ZSH's compinit

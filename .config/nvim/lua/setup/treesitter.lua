@@ -18,4 +18,4 @@ require'nvim-treesitter.configs'.setup {
 }
 
 require "nvim-treesitter.highlight"
-vim.treesitter.highlighter.hl_map.error = nil
+--vim.treesitter.highlighter.hl_map.error = nil
