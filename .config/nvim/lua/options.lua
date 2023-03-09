@@ -31,8 +31,8 @@ vim.o.lazyredraw = true
 
 vim.o.updatetime = 250
 vim.cmd [[autocmd! CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})]]
-vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.formatting_sync()]]
-vim.cmd [[autocmd Colorscheme * highlight NvimTreeNormal guibg=#1E1E1E guifg=#9da5b3"]]
-vim.cmd [[autocmd Colorscheme * highlight NvimTreeFolderName guibg=#1E1E1E guifg=#c1fdfa"]]
-vim.cmd [[autocmd Colorscheme * highlight NvimTreeOpenedFolderName guibg=#1E1E1E guifg=#90fdf8"]]
-vim.cmd [[autocmd Colorscheme * highlight NvimTreeOpenedFile guibg=#1E1E1E guifg=#9da5b3"]]
+vim.cmd [[autocmd BufWritePre *.ex,*.exs lua vim.lsp.buf.format()]]
+vim.cmd [[autocmd Colorscheme * highlight NvimTreeNormal guibg=#1E1E1E guifg=#9da5b3]]
+vim.cmd [[autocmd Colorscheme * highlight NvimTreeFolderName guibg=#1E1E1E guifg=#c1fdfa]]
+vim.cmd [[autocmd Colorscheme * highlight NvimTreeOpenedFolderName guibg=#1E1E1E guifg=#90fdf8]]
+vim.cmd [[autocmd Colorscheme * highlight NvimTreeOpenedFile guibg=#1E1E1E guifg=#9da5b3]]
