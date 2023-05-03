@@ -1,5 +1,5 @@
 local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
-local path_to_elixirls = vim.fn.expand("/Users/oleg/.ls-servers/elixir/release/language_server.sh")
+local path_to_elixirls = vim.fn.expand("/Users/oleg/.ls_servers/elixir-ls/release/language_server.sh")
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 
@@ -41,3 +41,5 @@ require'lspconfig'.html.setup({
   },
   settings = {}
 })
+
+require'lspconfig'.rust_analyzer.setup({})

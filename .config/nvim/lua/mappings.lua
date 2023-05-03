@@ -35,7 +35,7 @@ map {"", '<C-l>', '<C-W>l'}
 --After searching, pressing escape stops the highlight
 map {'n', '<esc>', ':noh<cr><esc>', {silient = true}}
 -- Nvim-Tree
-map {'n', '<Leader>t', ':NvimTreeToggle<cr>'}
+map {'n', '<Leader>T', ':NvimTreeToggle<cr>'}
 -- Telescope
 map {'n', '<Leader>f', '<cmd>lua require("telescope.builtin").find_files()<cr>'}
 map {'n', '<Leader>b', '<cmd>lua require("telescope.builtin").buffers()<cr>'}

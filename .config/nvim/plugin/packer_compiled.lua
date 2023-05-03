@@ -121,6 +121,12 @@ _G.packer_plugins = {
     path = "/Users/oleg/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
+  ["nvim-comment"] = {
+    config = { 'require("setup/nvim-comment")' },
+    loaded = true,
+    path = "/Users/oleg/.local/share/nvim/site/pack/packer/start/nvim-comment",
+    url = "https://github.com/terrortylor/nvim-comment"
+  },
   ["nvim-lspconfig"] = {
     config = { 'require("setup/lsp")' },
     loaded = true,
@@ -160,6 +166,12 @@ _G.packer_plugins = {
     path = "/Users/oleg/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["vim-test"] = {
+    config = { 'require("setup/vim-test")' },
+    loaded = true,
+    path = "/Users/oleg/.local/share/nvim/site/pack/packer/start/vim-test",
+    url = "https://github.com/vim-test/vim-test"
+  },
   ["vim-vsnip"] = {
     loaded = true,
     path = "/Users/oleg/.local/share/nvim/site/pack/packer/start/vim-vsnip",
@@ -192,26 +204,34 @@ time([[Config for which-key.nvim]], false)
 time([[Config for nvim-lspconfig]], true)
 require("setup/lsp")
 time([[Config for nvim-lspconfig]], false)
--- Config for: nvim-tree.lua
-time([[Config for nvim-tree.lua]], true)
-require("setup/nvim-tree")
-time([[Config for nvim-tree.lua]], false)
--- Config for: lualine.nvim
-time([[Config for lualine.nvim]], true)
-require("setup/lualine")
-time([[Config for lualine.nvim]], false)
--- Config for: nvim-cmp
-time([[Config for nvim-cmp]], true)
-require("setup/cmp")
-time([[Config for nvim-cmp]], false)
--- Config for: nvim-treesitter
-time([[Config for nvim-treesitter]], true)
-require("setup/treesitter")
-time([[Config for nvim-treesitter]], false)
 -- Config for: telescope.nvim
 time([[Config for telescope.nvim]], true)
 require("setup/telescope")
 time([[Config for telescope.nvim]], false)
+-- Config for: lualine.nvim
+time([[Config for lualine.nvim]], true)
+require("setup/lualine")
+time([[Config for lualine.nvim]], false)
+-- Config for: nvim-tree.lua
+time([[Config for nvim-tree.lua]], true)
+require("setup/nvim-tree")
+time([[Config for nvim-tree.lua]], false)
+-- Config for: nvim-treesitter
+time([[Config for nvim-treesitter]], true)
+require("setup/treesitter")
+time([[Config for nvim-treesitter]], false)
+-- Config for: nvim-comment
+time([[Config for nvim-comment]], true)
+require("setup/nvim-comment")
+time([[Config for nvim-comment]], false)
+-- Config for: nvim-cmp
+time([[Config for nvim-cmp]], true)
+require("setup/cmp")
+time([[Config for nvim-cmp]], false)
+-- Config for: vim-test
+time([[Config for vim-test]], true)
+require("setup/vim-test")
+time([[Config for vim-test]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

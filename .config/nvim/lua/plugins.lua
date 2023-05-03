@@ -79,6 +79,15 @@ return require("packer").startup({
       requires = { 'rktjmp/lush.nvim' }
     })
 
+    use({
+      'terrortylor/nvim-comment',
+      config = get_setup("nvim-comment")
+    })
+
+    use({
+      'vim-test/vim-test',
+      config = get_setup('vim-test')
+    })
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
